@@ -5,31 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тур Ногами</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
 </head>
 
 <body>
-    <header> 
-        <img src="images/logo.png" alt="Логотип" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#">Туры</a></li>
-                <li><a href="#">Идеи</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Помощь</a></li>
-            </ul>
-        </nav>
-        <a href="login.html">Войти</a>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Логотип" class="logo">
+            <h2 class="header-title">Тур Ногами</h2>
+            <nav class="menu">
+                <a href="#">Туры</a>
+                <a href="#">Идеи</a>
+                <a href="#">О нас</a>
+                <a href="#">Помощь</a>
+            </nav>
+            <a href="login.html" class="login">Войти</a>
+        </div>
     </header>
     <main class="main">
         <section>
-            <div>
-                <h2><b>PGS Kiris Resort</b></h2>
-                <img src="images/stars.png" alt="Рейтинг" class="rating-stars">
-                <h3>Kiriş, Sahil Cd. No 9, 07980 Kemer/Antalya, Турция</h3>
-                <img src="images/rating.png" alt="Рейтинг" class="rating">
-                <h3><b>Отлично</b></h3>
+            <div class="hotel-container">
+                <div class="hotel-rating">
+                    <h1 class="hotel-name">PGS Kiris Resort</h1>
+                    <div class="big-stars">
+                        ★ ★ ★ ★ ★
+                    </div>
+                </div>
+                <div class="hotel-address">
+                    Kiriş, Sahil Cd. No 9, 07980 Kemer/Antalya, Турция
+                </div>
             </div>
+
             <img src="images/main_photo.jpg" alt="Фото" class="main-photo">
             <figure>
                 <img src="images/thumbnail_0.jpg" alt="Фото" class="thumbnail">
@@ -39,25 +47,33 @@
                 <img src="images/thumbnail_4.png" alt="Фото" class="thumbnail">
             </figure>
             <aside>
-                <ul>
+                <h4>
+                    <img src="images/rating.png" alt="Рейтинг" class="rating"> Отлично
+                </h4>
+                <h4>Преимущества</h4>
+                <ul class="advantages">
                     <li>
-                        <h3><b>Преимущества</b></h3>
-                        <img src="images/icon_0.png" alt="Иконка" class="icon">
-                        <h3>До пляжа - 200м</h3>
-                        <img src="images/icon_1.png" alt="Иконка" class="icon">
-                        <h3>Аэропорт - 65км</h3>
-                        <img src="images/icon_2.png" alt="Иконка" class="icon">
-                        <h3>Трансфер</h3>
-                        <img src="images/icon_3.png" alt="Иконка" class="icon">
-                        <h3>Wi-fi в номере</h3>
-                        <img src="images/icon_4.png" alt="Иконка" class="icon">
-                        <h3>Развлечения</h3>
-                        <img src="images/icon_5.png" alt="Иконка" class="icon">
-                        <h3>Не требуется виза</h3>
-                        <h2><b>от 4500 Р/ночь</b></h2>
-                        <b><a href="booking.html">Забронировать</a></b>
+                        <p><img src="images/icon_0.png" alt="Иконка" class="icon">До пляжа - 200м</p>
+                    </li>
+                    <li>
+                        <p><img src="images/icon_1.png" alt="Иконка" class="icon">Аэропорт - 65км</p>
+                    </li>
+                    <li>
+
+                        <p><img src="images/icon_2.png" alt="Иконка" class="icon">Трансфер</p>
+                    </li>
+                    <li>
+                        <p><img src="images/icon_3.png" alt="Иконка" class="icon">Wi-fi в номере</p>
+                    </li>
+                    <li>
+                        <p><img src="images/icon_4.png" alt="Иконка" class="icon">Развлечения</p>
+                    </li>
+                    <li>
+                        <p><img src="images/icon_5.png" alt="Иконка" class="icon">Не требуется виза</p>
                     </li>
                 </ul>
+                <h3>от 4500 Р/ночь</h3>
+                <h3><a href="booking.html">Забронировать</a></h3>
             </aside>
         </section>
 
@@ -65,112 +81,123 @@
             <ul class="hotel-features">
                 <li>
                     <img src="images/feature_image_beach.jpg" alt="Пляж" class="feature-image">
-                    <h3><b>Пляж</b></h3>
-                    <h3>Наша гостиница имеет крутой пляж, где вы можете расслабиться</h3>
-                    <a href="#">Подробнее</a>
+                    <h3>Пляж</h3>
+                    <p>Наша гостиница имеет крутой пляж, где вы можете расслабиться</p>
                 </li>
                 <li>
                     <img src="images/feature_image_hotel.jpg" alt="Отель" class="feature-image">
-                    <h3><b>Отель</b></h3>
-                    <h3>В этом разделе вы сможете узнать нашу гостиницу лучше</h3>
-                    <a href="#">Подробнее</a>
+                    <h3>Отель</h3>
+                    <p>В этом разделе вы сможете узнать нашу гостиницу лучше</p>
                 </li>
                 <li>
                     <img src="images/feature_image_meals.jpg" alt="Питание в отеле" class="feature-image">
-                    <h3><b>Питание в отеле</b></h3>
-                    <h3>Мы предоставляем трёхразовое питание за дополнительную плату</h3>
-                    <a href="#">Подробнее</a>
+                    <h3>Питание в отеле</h3>
+                    <p>Мы предоставляем трёхразовое питание за дополнительную плату</p>
                 </li>
                 <li>
                     <img src="images/feature_image_entertainments.jpg" alt="Развлечения" class="feature-image">
-                    <h3><b>Развлечения</b></h3>
-                    <h3>Теннисный корт, три бассейна, приставка и даже больше</h3>
-                    <a href="#">Подробнее</a>
+                    <h3>Развлечения</h3>
+                    <p>Теннисный корт, три бассейна, приставка и даже больше</p>
                 </li>
             </ul>
         </section>
 
         <section>
             <div>
-                <h2><b>Похожие отели</b></h2>
+                <h2>Похожие отели</h2>
             </div>
             <ul class="similar-hotels">
                 <li>
                     <img src="images/similar_hotels_0.png" alt="Limak limba hotel" class="hotel-image">
-                    <img src="images/raiting.png" alt="Рейтинг" class="rating-image">
+                    <img src="images/stars.png" alt="Рейтинг" class="rating-image">
                     <h3>Limak limba hotel</h3>
                     <p>На песчаном побережье Средиземного моря, у подножия горы Олимп</p>
-                    <a href="#">Подробнее</a>
                 </li>
                 <li>
                     <img src="images/similar_hotels_1.png" alt="Limak park hotel" class="hotel-image">
-                    <img src="images/raiting.png" alt="Рейтинг" class="rating-image">
+                    <img src="images/stars.png" alt="Рейтинг" class="rating-image">
                     <h3>Limak park hotel</h3>
                     <p>Детишки смогут поплавать в бассейне с водными горками, поиграть на площадке</p>
-                    <a href="#">Подробнее</a>
                 </li>
                 <li>
                     <img src="images/similar_hotels_2.png" alt="Viking park" class="hotel-image">
-                    <img src="images/raiting_1.png" alt="Рейтинг" class="rating-image">
+                    <img src="images/stars.png" alt="Рейтинг" class="rating-image">
                     <h3>Viking park</h3>
                     <p>Строго элегантная гостиница Viking park 4* находится на южном побережье Турции</p>
-                    <a href="#">Подробнее</a>
                 </li>
             </ul>
+        </section>
+
+        <section class="login-section">
+            <form action="/" class="login-form">
+                <h2>Вход</h2>
+                <div class="input-group">
+                    <label for="phone-email">Телефон или почта</label>
+                    <input type="text" class="phone-email" name="phone-email" placeholder="Введите телефон или почту" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" class="password" name="password" placeholder="Введите пароль" required>
+                </div>
+                <a href="#" class="forgot-password-and-register">Забыли пароль?</a>
+                <div class="social-login">
+                    <p>Войти с помощью</p>
+                    <div class="social-icons">
+                        <span class="icon-placeholder">[ICON]</span>
+                        <span class="icon-placeholder">[ICON]</span>
+                        <span class="icon-placeholder">[ICON]</span>
+                        <span class="icon-placeholder">[ICON]</span>
+                    </div>
+                </div>
+                <a href="#" class="forgot-password-and-register">Зарегистрироваться</a>
+                <h3><button type="submit" class="login-button">Войти</button></h3>
+            </form>
         </section>
 
         <section>
             <div>
-                <h2><b>Интересное для вас</b></h2>
+                <h2>Интересное для вас</h2>
             </div>
             <ul class="interesting-list">
-                <li> 
+                <li>
                     <img src="images/interesting_list_0.png" alt="Лучший отдых на море" class="interesting-image">
-                    <h3>Лучший отдых на море в сезоне 2020 на море в полном разгаре</h3>
+                    <h4>Лучший отдых на море в сезоне 2020 на море в полном разгаре</h4>
                 </li>
                 <li>
                     <img src="images/interesting_list_1.png" alt="Лучший отдых на море" class="interesting-image">
-                    <h3>Лучший отдых на море в сезоне 2020 на море в полном разгаре</h3>
+                    <h4>Лучший отдых на море в сезоне 2020 на море в полном разгаре</h4>
                 </li>
                 <li>
                     <img src="images/interesting_list_2.png" alt="Программы заботы о вас" class="interesting-image">
-                    <h3>Программы заботы о вас на отдыхе в отеле на море</h3>
+                    <h4>Программы заботы о вас на отдыхе в отеле на море</h4>
                 </li>
                 <li>
                     <img src="images/interesting_list_3.png" alt="В отеле всё спокойно" class="interesting-image">
-                    <h3>В отеле всё спокойно</h3>
+                    <h4>В отеле всё спокойно</h4>
                 </li>
                 <li>
                     <img src="images/interesting_list_4.png" alt="Программы заботы о вас на отдыхе в отеле на море"
                         class="interesting-image">
-                    <h3>Программы заботы о вас на отдыхе в отеле на море</h3>
+                    <h4>Программы заботы о вас на отдыхе в отеле на море</h4>
                 </li>
             </ul>
         </section>
-
-        <section>
-            <form action="/">
-                <h1>Вход в личный кабинет</h1>
-                <input type="tel" name="phone" placeholder="Номер телефона" required>
-                <input type="password" name="password" placeholder="Пароль" required>
-                <button>Войти</button>
-            </form>
-        </section>
     </main>
     <footer>
-        <img src="images/logo.png" alt="Логотип" class="logo">
+        <img src="images/footer_logo.png" alt="Логотип" class="logo">
+        <h2 class="footer-title">Тур Ногами</h2>
         <p>Сайт создан Опалевой Алиной <br>
-            и Сухановой Анастасией ЭК-31</p>
+           и Сухановой Анастасией ЭК-31</p>
         <ul>
-            <li><a href="#">Акции отеля</a></li>
-            <li><a href="#">Блог</a></li>
-            <li><a href="#">Все новости</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Пирсы</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Расположение</a></li>
-            <li><a href="#">Фотогаллерея</a></li>
+            <li><p><a href="#">Акции отеля</a></p></li>
+            <li><p><a href="#">Блог</a></p></li>
+            <li><p><a href="#">Все новости</a></p></li>
+            <li><p><a href="#">Отзывы</a></p></li>
+            <li><p><a href="#">О нас</a></p></li>
+            <li><p><a href="#">Пирсы</a></p></li>
+            <li><p><a href="#">Контакты</a></p></li>
+            <li><p><a href="#">Расположение</a></p></li>
+            <li><p><a href="#">Фотогаллерея</a></p></li>
         </ul>
     </footer>
 </body>

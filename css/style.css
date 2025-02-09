@@ -1,30 +1,74 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+header {
+    padding: 10px 0;
+    margin-bottom: 24px;
 }
 
-header {
+.header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #f8f8f8;
+    justify-content: space-between;
+    max-width: 1244px;
+    margin: 32px auto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.menu {
+    display: flex;
+    gap: 56px;
+    margin: 16px auto;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.login {
+    text-decoration: none;
+    color: #5047D7;
+}
+
+.header-title {
+    color: #5047D7;
+    letter-spacing: 0.5px;
 }
 
 .logo {
-    width: 242px;
-    height: auto;
+    width: 55px;
+    margin-right: 10px
 }
 
-.stars {
-    width: 250px;
-    height: 26px;
+.hotel-container {
+    margin-bottom: 32px;
 }
 
-.stars {
-    width: 53px;
-    height: auto;
+.hotel-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.hotel-name {
+    margin-right: 32px;
+    letter-spacing: 0.5px;
+}
+
+.big-stars {
+    font-size: 26px;
+    padding: 11px;
+    color: #FFB801;
+    font-weight: bold
+}
+
+.hotel-address {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: #666666;
+    text-decoration: underline;
+    font-weight: 400;
 }
 
 .main-photo {
@@ -75,4 +119,105 @@ header {
 
 .interesting-list li {
     margin: 10px;
+}
+
+.advantages {
+    color: #3C3E44;
+}
+
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 110px 98px;
+}
+
+.footer-title {
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.input-group label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+
+.input-group input {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #333333;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.input-group input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: justify;
+    padding: 4px 16px;
+}
+
+.input-group input:focus {
+    border-color: #5047D7;
+    outline: none;
+}
+
+.input-group input:disabled {
+    background-color: #f0f0f0;
+    border-color: #333333;
+    cursor: not-allowed;
+}
+
+.login-button {
+    padding: 10px;
+    background-color: #5047D7;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #403b8d;
+}
+
+.login-button:active {
+    background-color: #403b8d;
+}
+
+.login-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(80, 71, 215, 0.5);
+}
+
+.forgot-password-and-register {
+    color: #5047D7;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s;
+}
+
+.forgot-password-and-register:hover {
+    color: #403b8d;
+}
+
+.forgot-password-and-register:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+.forgot-password-and-register:active {
+    color: #302c6f;
 }
