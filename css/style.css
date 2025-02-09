@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.logo {
+    width: 242px;
+    height: auto;
+}
+
+.stars {
+    width: 250px;
+    height: 26px;
+}
+
+.stars {
+    width: 53px;
+    height: auto;
+}
+
+.main-photo {
+    width: 925px;
+    height: 428px;
+}
+
+
+.thumbnail {
+    width: 172px;
+    height: 104px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+}
+
+.hotel-features {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feature-image {
+    width: 287px;
+    height: 186px;
+}
+
+.similar-hotels {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hotel-image {
+    width: 393px;
+    height: 214px;
+}
+
+.rating-image {
+    width: 114px;
+    height: 19px;
+}
+
+.interesting-image {
+    width: 318px;
+    height: 199px;
+}
+
+.interesting-list li {
+    margin: 10px;
+}
