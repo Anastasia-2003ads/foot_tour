@@ -71,31 +71,27 @@ header {
     font-weight: 400;
 }
 
-.main-photo {
+.section-1 .main-photo {
     width: 925px;
     height: 428px;
 }
 
-.thumbnail {
+.section-1 .thumbnail {
     width: 172px;
     height: 104px;
 }
 
-.icon {
+.section-1 .icon {
     width: 35px;
     height: 35px;
 }
 
-.advantages {
-    color: #3C3E44;
-}
-
-.hotel-features {
+.section-2 .hotel-features {
     list-style-type: none;
     padding: 0;
 }
 
-.feature-image {
+.section-2 .feature-image {
     width: 287px;
     height: 186px;
 }
