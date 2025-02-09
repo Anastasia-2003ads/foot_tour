@@ -39,11 +39,11 @@ header {
     margin-right: 10px
 }
 
-.hotel-container {
+.section-1 .hotel {
     margin-bottom: 32px;
 }
 
-.hotel-rating {
+.section-1 .rating {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
@@ -51,19 +51,19 @@ header {
     color: #333333;
 }
 
-.hotel-name {
+.section-1 .name {
     margin-right: 32px;
     letter-spacing: 0.5px;
 }
 
-.big-stars {
+.section-1 .stars {
     font-size: 26px;
     padding: 11px;
     color: #FFB801;
     font-weight: bold
 }
 
-.hotel-address {
+.section-1 .address {
     font-family: 'Open Sans';
     font-size: 18px;
     color: #666666;
@@ -76,7 +76,6 @@ header {
     height: 428px;
 }
 
-
 .thumbnail {
     width: 172px;
     height: 104px;
@@ -85,6 +84,10 @@ header {
 .icon {
     width: 35px;
     height: 35px;
+}
+
+.advantages {
+    color: #3C3E44;
 }
 
 .hotel-features {
@@ -119,10 +122,6 @@ header {
 
 .interesting-list li {
     margin: 10px;
-}
-
-.advantages {
-    color: #3C3E44;
 }
 
 footer {
