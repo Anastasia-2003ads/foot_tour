@@ -272,14 +272,14 @@ footer a {
     text-decoration: none;
 }
 
-.input-group label {
+.section-4 label {
     font-weight: 400;
     font-size: 12px;
     line-height: 30px;
     letter-spacing: 0px;
 }
 
-.input-group input {
+.section-4 input {
     font-weight: 400;
     font-size: 18px;
     padding: 4px;
@@ -289,7 +289,7 @@ footer a {
     width: 100%;
 }
 
-.input-group input::placeholder {
+.section-4 input::placeholder {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -300,13 +300,13 @@ footer a {
 }
 
 
-.input-group input:disabled {
+.section-4 input:disabled {
     background-color: #f0f0f0;
     border-color: #333333;
     cursor: not-allowed;
 }
 
-.login-button {
+.section-4 .login-button {
     padding: 10px;
     border: none;
     border-radius: 16px;
@@ -316,27 +316,27 @@ footer a {
     transition: background-color 0.3s;
 }
 
-.login-button:focus {
+.section-4 .login-button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(80, 71, 215, 0.5);
 }
 
-.forgot-password-and-register {
+.section-4 .section-4 .section-4 .forgot-password-and-register {
     color: #5047D7;
     text-decoration: none;
     font-size: 12px;
     transition: color 0.3s;
 }
 
-.forgot-password-and-register:hover {
+.section-4 .forgot-password-and-register:hover {
     color: #403b8d;
 }
 
-.forgot-password-and-register:focus {
+.section-4 .forgot-password-and-register:focus {
     outline: none;
     text-decoration: underline;
 }
 
-.forgot-password-and-register:active {
+.section-4 .forgot-password-and-register:active {
     color: #302c6f;
 }
