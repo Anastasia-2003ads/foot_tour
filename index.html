@@ -181,30 +181,33 @@
             <div class="title">
                 <h2>Интересное для вас</h2>
             </div>
-            <ul class="interesting-list">
-                <li>
-                    <img src="images/interesting_list_0.png" alt="Лучший отдых на море" class="interesting-image">
-                    <h4>Лучший отдых на море в сезоне 2020 на море в полном разгаре</h4>
-                </li>
-                <li>
-                    <img src="images/interesting_list_1.png" alt="Лучший отдых на море" class="interesting-image">
-                    <h4>Лучший отдых на море в сезоне 2020 на море в полном разгаре</h4>
-                </li>
-                <li>
-                    <img src="images/interesting_list_2.png" alt="Программы заботы о вас" class="interesting-image">
-                    <h4>Программы заботы о вас на отдыхе в отеле на море</h4>
-                </li>
-                <li>
-                    <img src="images/interesting_list_3.png" alt="В отеле всё спокойно" class="interesting-image">
-                    <h4>В отеле всё спокойно</h4>
-                </li>
-                <li>
-                    <img src="images/interesting_list_4.png" alt="Программы заботы о вас на отдыхе в отеле на море"
-                        class="interesting-image">
-                    <h4>Программы заботы о вас на отдыхе в отеле на море</h4>
-                </li>
-            </ul>
+            <div class="carousel-container">
+                <ul class="interesting-list">
+                    <li>
+                        <img src="images/interesting_list_0.png" alt="Лучший отдых на море" class="interesting-image">
+                        <h4>Лучший отдых на море в сезоне 2020 на море в полном разгаре</h4>
+                    </li>
+                    <li>
+                        <img src="images/interesting_list_1.png" alt="Лучший отдых на море" class="interesting-image">
+                        <h4>Лучший отдых на море в сезоне 2020 на море в полном разгаре</h4>
+                    </li>
+                    <li>
+                        <img src="images/interesting_list_2.png" alt="Программы заботы о вас" class="interesting-image">
+                        <h4>Программы заботы о вас на отдыхе в отеле на море</h4>
+                    </li>
+                    <li>
+                        <img src="images/interesting_list_3.png" alt="В отеле всё спокойно" class="interesting-image">
+                        <h4>В отеле всё спокойно</h4>
+                    </li>
+                    <li>
+                        <img src="images/interesting_list_4.png" alt="Программы заботы о вас на отдыхе в отеле на море"
+                            class="interesting-image">
+                        <h4>Программы заботы о вас на отдыхе в отеле на море</h4>
+                    </li>
+                </ul>
+            </div>
         </section>
+
     </main>
     <footer>
         <img src="images/footer_logo.png" alt="Логотип" class="logo">
@@ -241,6 +244,14 @@
             </li>
         </ul>
     </footer>
+
+    <script>
+        window.onload = function () {
+            const container = document.querySelector('.carousel-container');
+            const targetItem = document.querySelector('.interesting-list li:nth-child(3)');
+            container.scrollLeft = targetItem.offsetLeft - (container.offsetWidth / 2) + (targetItem.offsetWidth / 2);
+        };
+    </script>
 </body>
 
 </html>

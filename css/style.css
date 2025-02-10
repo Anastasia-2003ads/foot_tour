@@ -387,7 +387,7 @@ footer a {
 }
 
 .interesting-list {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     list-style-type: none;
     padding: 0;
@@ -418,4 +418,10 @@ footer a {
     color: #fff;
     padding: 20px 16px;
     margin: 0;
+}
+
+.carousel-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
