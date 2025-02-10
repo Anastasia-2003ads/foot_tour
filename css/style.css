@@ -371,19 +371,18 @@ footer a {
 }
 
 .section-5 {
-    padding: 20px 0;
+    padding: 54px 0 108px 0;
 }
 
 .title {
     max-width: 1244px;
     margin: 0 auto;
-    padding: 0 10px;
 }
 
 .title h2 {
     text-align: left;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .interesting-list {
@@ -421,7 +420,7 @@ footer a {
 }
 
 .carousel-container {
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    cursor: grab;
 }

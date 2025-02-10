@@ -246,11 +246,21 @@
     </footer>
 
     <script>
+
         window.onload = function () {
             const container = document.querySelector('.carousel-container');
             const targetItem = document.querySelector('.interesting-list li:nth-child(3)');
             container.scrollLeft = targetItem.offsetLeft - (container.offsetWidth / 2) + (targetItem.offsetWidth / 2);
         };
+
+        const carouselContainer = document.querySelector('.carousel-container');
+
+        carouselContainer.addEventListener('wheel', (e) => {
+            e.preventDefault(); // Предотвращаем стандартное поведение прокрутки
+            carouselContainer.scrollLeft += e.deltaY; // Прокручиваем горизонтально
+        });
+
+
     </script>
 </body>
 
