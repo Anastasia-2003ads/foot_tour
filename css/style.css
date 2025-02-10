@@ -226,7 +226,13 @@ aside a {
     margin-bottom: 12px;
 }
 
+.section-3 .carousel-container {
+    display: flex;
+}
+
 .section-3 .similar-hotels {
+    display: inline-flex;
+    justify-content: space-between;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -256,7 +262,6 @@ aside a {
     align-items: flex-start;
     max-width: 393px;
 }
-
 
 .interesting-image {
     width: 318px;
