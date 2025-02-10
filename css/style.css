@@ -1,6 +1,7 @@
-header {
-    padding: 10px 0;
-    margin-bottom: 24px;
+* {
+    margin: 0;
+    outline: none;
+    padding: 0;
 }
 
 .header-container {
@@ -8,7 +9,7 @@ header {
     align-items: center;
     justify-content: space-between;
     max-width: 1244px;
-    margin: 32px auto;
+    margin: 32px auto 56px auto;
     font-size: 18px;
     font-weight: 400;
 }
@@ -24,6 +25,10 @@ header {
     color: #333333;
 }
 
+img {
+    border-radius: 8px;
+}
+
 .login {
     text-decoration: none;
     color: #5047D7;
@@ -36,14 +41,17 @@ header {
 
 .logo {
     width: 55px;
-    margin-right: 10px
+    margin-right: 10px;
 }
 
-.section-1 .hotel {
-    margin-bottom: 32px;
+.section-1 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1244px;
+    padding-bottom: 56px;
 }
 
-.section-1 .rating {
+.section-1 .main-hotel-rating {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
@@ -51,19 +59,19 @@ header {
     color: #333333;
 }
 
-.section-1 .name {
+.section-1 .main-hotel-name {
     margin-right: 32px;
     letter-spacing: 0.5px;
 }
 
-.section-1 .stars {
+.section-1 .main-hotel-stars {
     font-size: 26px;
     padding: 11px;
     color: #FFB801;
     font-weight: bold
 }
 
-.section-1 .address {
+.section-1 .main-hotel-address {
     font-family: 'Open Sans';
     font-size: 18px;
     color: #666666;
@@ -72,8 +80,60 @@ header {
 }
 
 .section-1 .main-photo {
-    width: 925px;
-    height: 428px;
+    max-width: 925px;
+    max-height: 428px;
+    margin: 32px 32px 16px 0px;
+}
+
+.section-1 aside {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    max-width: 250px;
+}
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: auto;
+}
+
+.advantages li {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 16px;
+}
+
+aside h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+aside .num-rating {
+    margin-bottom: 16px;
+}
+
+aside h4 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+aside a {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #5c3aff;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .section-1 .thumbnail {
@@ -84,6 +144,12 @@ header {
 .section-1 .icon {
     width: 35px;
     height: 35px;
+}
+
+.section-1 figure {
+    width: 925px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .section-2 .hotel-features {
