@@ -354,7 +354,7 @@ footer a {
 .button-wrapper {
     width: 100%;
     display: flex;
-    justify-content: center; /* Центрация кнопки */
+    justify-content: center;
 }
 
 .section-4 .login-button {
@@ -368,4 +368,54 @@ footer a {
     transition: background-color 0.3s;
     box-sizing: border-box;
     text-align: center;
+}
+
+.section-5 {
+    padding: 20px 0;
+}
+
+.title {
+    max-width: 1244px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.title h2 {
+    text-align: left;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.interesting-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.interesting-list li {
+    position: relative;
+    margin: 0 10px;
+    width: 319px;
+    height: 199px;
+    border-radius: 8px;
+}
+
+.interesting-image {
+    width: 319px;
+    height: 199px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.interesting-list h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 20px 16px;
+    margin: 0;
 }
