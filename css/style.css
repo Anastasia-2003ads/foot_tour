@@ -162,23 +162,29 @@ aside a {
 
 .section-2 .hotel-features {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     margin: 0;
     gap: 32px;
     justify-content: center;
-    flex-wrap: nowrap;
     max-width: 1244px;
 }
 
 .hotel-features li {
-    max-width: 287px;
-    text-align: left;
-    height: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 287px;
+    width: calc(50% - 32px);
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .hotel-features li {
+        width: 100%; /* На малых экранах элементы растягиваются на весь экран */
+    }
 }
 
 .section-2 .feature-image {
