@@ -48,6 +48,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     max-width: 1244px;
+    margin: 0 auto;
     padding-bottom: 56px;
 }
 
@@ -128,7 +129,7 @@ aside h4 {
 aside a {
     display: inline-block;
     padding: 12px 18px;
-    background-color: #5c3aff;
+    background-color: #5047D7;
     color: white;
     text-align: center;
     border-radius: 5px;
@@ -152,14 +153,42 @@ aside a {
     justify-content: space-between;
 }
 
+.section-2 {
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    padding: 56px 0;
+}
+
 .section-2 .hotel-features {
-    list-style-type: none;
+    display: flex;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 1244px;
+}
+
+.hotel-features li {
+    max-width: 287px;
+    text-align: left;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .section-2 .feature-image {
-    width: 287px;
-    height: 186px;
+    max-width: 287px;
+}
+
+.section-2 h3 {
+    margin: 16px 0;
+}
+
+.btn-more {
+    padding: 4.5px 12px;
+    font-size: 18px;
 }
 
 .similar-hotels {
@@ -228,10 +257,6 @@ footer a {
     padding: 4px 16px;
 }
 
-.input-group input:focus {
-    border-color: #5047D7;
-    outline: none;
-}
 
 .input-group input:disabled {
     background-color: #f0f0f0;
@@ -241,21 +266,12 @@ footer a {
 
 .login-button {
     padding: 10px;
-    background-color: #5047D7;
     border: none;
     border-radius: 16px;
     color: white;
     cursor: pointer;
     width: 100%;
     transition: background-color 0.3s;
-}
-
-.login-button:hover {
-    background-color: #403b8d;
-}
-
-.login-button:active {
-    background-color: #403b8d;
 }
 
 .login-button:focus {

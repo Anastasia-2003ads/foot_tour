@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    max-width: 1244px;
+    max-width: 1440px;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     color: #333333;
@@ -164,19 +164,27 @@ img {
  * 2. Remove the margin in Firefox and Safari.
  */
 
-button,
-input,
-optgroup,
-select,
-textarea {
-    font-family: inherit;
-    /* 1 */
-    font-size: 100%;
-    /* 1 */
-    line-height: 1.15;
-    /* 1 */
-    margin: 0;
-    /* 2 */
+button {
+    background-color: #5047D7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 700;
+    text-align: center;
+}
+
+input:focus {
+    border-color: #5047D7;
+}
+
+button:hover,
+button:active {
+    background-color: #403b8d;
+    outline: none;
+    color: white;
+    border: none;
 }
 
 /**
