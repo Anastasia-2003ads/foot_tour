@@ -153,6 +153,49 @@ aside a {
     justify-content: space-between;
 }
 
+
+@media (max-width: 1199px) {
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        align-items: center;
+    }
+
+    .section-1 .main-hotel,
+    .section-1 .main-photo,
+    .section-1 aside {
+        width: 100%;
+    }
+
+    .section-1 .main-hotel {
+        margin-bottom: 16px;
+    }
+
+    .section-1 .main-photo,
+    .section-1 figure {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        flex-wrap: wrap; /* Разрешаем перенос, чтобы избежать конфликтов */
+        gap: 10px;
+    }
+
+    .section-1 .thumbnail {
+        flex: 1 1 calc(20% - 10px); /* Устанавливаем одинаковую ширину */
+        height: auto;
+        max-width: 20%; /* Устанавливаем максимальную ширину */
+    }
+
+    .section-1 aside {
+        margin-top: 32px;
+        padding: 0 16px; /* Добавляем отступы */
+    }
+}
+
+
 .section-2 {
     background-color: #F0F0F0;
     display: flex;
