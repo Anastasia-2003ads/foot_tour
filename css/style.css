@@ -193,26 +193,60 @@ aside a {
     margin-bottom: 16px;
 }
 
-.btn-more {
+.section-2 .btn-more {
     padding: 4.5px 12px;
     font-size: 18px;
     margin-top: auto;
 }
 
-.similar-hotels {
+.section-3 {
+    padding: 108px 0 54px 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1244px;
+    margin: 0 auto;
+}
+
+.section-3 h2 {
+    margin-bottom: 25px;
+}
+
+.section-3 h3 {
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.section-3 .similar-hotels {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
 }
 
-.hotel-image {
+.section-3 .hotel-image {
     width: 393px;
     height: 214px;
+    border-radius: 0;
 }
 
-.rating-image {
+.section-3 .rating-image {
     width: 114px;
     height: 19px;
 }
+
+.section-3 .similar-hotels-content {
+    margin: 32px 32px 75px 32px;
+}
+
+.section-3 .similar-hotels li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 393px;
+}
+
 
 .interesting-image {
     width: 318px;
