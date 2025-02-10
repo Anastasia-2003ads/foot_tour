@@ -257,22 +257,6 @@ aside a {
     margin: 10px;
 }
 
-footer {
-    background-color: #333333;
-    color: #FFFFFF;
-    padding: 110px 98px;
-}
-
-.footer-title {
-    letter-spacing: 0.5px;
-}
-
-footer a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-
 .section-4 {
     display: flex;
     justify-content: center;
@@ -423,4 +407,75 @@ footer a {
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     cursor: grab;
+}
+
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 104px 104px 118px 98px;
+}
+
+.footer-container,
+footer p {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #fff;
+}
+
+.footer-title {
+    letter-spacing: 0.5px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left img {
+    margin-bottom: 10px;
+}
+
+.footer-left h2 {
+    margin-bottom: 10px;
+}
+
+.footer-left div {
+    margin-top: 10px;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding-right: 40px;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.footer-right li {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-right li::before {
+    content: url('data:image/svg+xml;utf8,<svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.5" d="M1 1.98069L1 8.09607L4 5.03838L1 1.98069Z" fill="white" stroke="white"/></svg>');
+    margin-right: 16px;
+}
+
+.footer-right a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
 }
