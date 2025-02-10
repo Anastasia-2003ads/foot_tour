@@ -160,15 +160,14 @@ aside a {
     padding: 56px 0;
 }
 
-.section-2 .hotel-features {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+.hotel-features {
+    display: grid;
+    gap: 32px;
+    max-width: 1244px;
     padding: 0;
     margin: 0;
-    gap: 32px;
+    grid-template-columns: repeat(4, 287px);
     justify-content: center;
-    max-width: 1244px;
 }
 
 .hotel-features li {
@@ -176,14 +175,19 @@ aside a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 287px;
-    width: calc(50% - 32px);
     text-align: left;
+
 }
 
-@media (max-width: 768px) {
-    .hotel-features li {
-        width: 100%; /* На малых экранах элементы растягиваются на весь экран */
+@media (max-width: 1260px) {
+    .hotel-features {
+        grid-template-columns: repeat(2, 287px);
+    }
+}
+
+@media (max-width: 620px) {
+    .hotel-features {
+        grid-template-columns: 1fr;
     }
 }
 
