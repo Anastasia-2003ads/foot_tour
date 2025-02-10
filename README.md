@@ -10,3 +10,6 @@
 - 26.11 определена тема проекта 
 - 29.11 начало проекта
 - 12.12 Макет в фигме: https://www.figma.com/design/bsXSyax0pN6ebaOvUJRcU3/Web-tectology?node-id=0-9&t=OOsYOuNUBBn3Gsyp-0
+---
+# Адаптивная верстка
+- Для разрешения 1024px
