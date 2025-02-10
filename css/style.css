@@ -176,6 +176,9 @@ aside a {
     text-align: left;
     height: 100%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .section-2 .feature-image {
@@ -186,9 +189,14 @@ aside a {
     margin: 16px 0;
 }
 
+.section-2 p {
+    margin-bottom: 16px;
+}
+
 .btn-more {
     padding: 4.5px 12px;
     font-size: 18px;
+    margin-top: auto;
 }
 
 .similar-hotels {
