@@ -151,31 +151,30 @@
             </div>
         </section>
 
-        <section class="section-4">
-            <form action="/" class="login-form">
-                <h2>Вход</h2>
-                <div class="input-group">
-                    <label for="phone-email">Телефон или почта</label>
-                    <input type="text" class="phone-email" name="phone-email" placeholder="Введите телефон или почту"
-                        required>
+        <section class="login-form">
+            <form action="/" class="login-form__container">
+                <h2 class="login-form__title">Вход</h2>
+                <div class="login-form__input-group">
+                    <label for="phone-email" class="login-form__label">Телефон или почта</label>
+                    <input type="text" id="phone-email" class="login-form__input" name="phone-email" placeholder="Введите телефон или почту" required>
                 </div>
-                <div class="input-group">
-                    <label for="password">Пароль</label>
-                    <input type="password" class="password" name="password" placeholder="Введите пароль" required>
+                <div class="login-form__input-group">
+                    <label for="password" class="login-form__label">Пароль</label>
+                    <input type="password" id="password" class="login-form__input" name="password" placeholder="Введите пароль" required>
                 </div>
-                <a href="#" class="forgot-password-and-register">Забыли пароль?</a>
-                <div class="social-login">
-                    <p>Войти с помощью</p>
-                    <div class="social-icons">
-                        <span class="icon-placeholder"></span>
-                        <span class="icon-placeholder"></span>
-                        <span class="icon-placeholder"></span>
-                        <span class="icon-placeholder"></span>
+                <a href="#" class="login-form__link">Забыли пароль?</a>
+                <div class="login-form__social-login">
+                    <p class="login-form__social-text">Войти с помощью</p>
+                    <div class="login-form__social-icons">
+                        <span class="login-form__icon"></span>
+                        <span class="login-form__icon"></span>
+                        <span class="login-form__icon"></span>
+                        <span class="login-form__icon"></span>
                     </div>
                 </div>
-                <a href="#" class="forgot-password-and-register">Зарегистрироваться</a>
-                <div class="button-wrapper">
-                    <button type="submit" class="login-button">Войти</button>
+                <a href="#" class="login-form__link">Зарегистрироваться</a>
+                <div class="login-form__button-wrapper">
+                    <button type="submit" class="login-form__button">Войти</button>
                 </div>
             </form>
         </section>

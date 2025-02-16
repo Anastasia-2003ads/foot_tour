@@ -302,16 +302,7 @@
     margin-bottom: 12px;
 }
 
-.interesting-image {
-    width: 318px;
-    height: 199px;
-}
-
-.interesting-list li {
-    margin: 10px;
-}
-
-.section-4 {
+.login-form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -323,7 +314,7 @@
     background-position: center;
 }
 
-.section-4 .login-form {
+.login-form__container {
     background-color: #FFFFFF;
     width: 100%;
     max-width: 616px;
@@ -334,22 +325,22 @@
     z-index: 1;
 }
 
-.section-4 h2 {
+.login-form__title {
     text-align: center;
     margin-bottom: 35px;
 }
 
-.section-4 .input-group {
+.login-form__input-group {
     margin-bottom: 20px;
 }
 
-.section-4 label {
+.login-form__label {
     display: block;
     font-size: 12px;
     line-height: 30px;
 }
 
-.section-4 input {
+.login-form__input {
     width: 100%;
     font-size: 18px;
     padding: 10px;
@@ -357,11 +348,11 @@
     border-radius: 16px;
 }
 
-.section-4 input::placeholder {
-    color: #66666666;
+.login-form__input::placeholder {
+    color: #666666;
 }
 
-.section-4 .forgot-password-and-register {
+.login-form__link {
     font-size: 12px;
     text-align: right;
     display: block;
@@ -369,19 +360,19 @@
     text-decoration: none;
 }
 
-.section-4 .social-login {
+.login-form__social-login {
     text-align: center;
     margin-bottom: 16px;
 }
 
-.section-4 .social-icons {
+.login-form__social-icons {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 8px;
 }
 
-.section-4 .icon-placeholder {
+.login-form__icon {
     margin-top: 10px;
     width: 40px;
     height: 40px;
@@ -389,13 +380,13 @@
     border-radius: 8px;
 }
 
-.button-wrapper {
+.login-form__button-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.section-4 .login-button {
+.login-form__button {
     width: 100%;
     max-width: 335px;
     padding: 12px;
