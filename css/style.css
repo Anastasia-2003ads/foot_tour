@@ -31,7 +31,7 @@
 .header__menu {
     display: flex;
     gap: 56px;
-    margin: 16px auto; /* Центрирование блока меню в родителе */
+    margin: 16px auto;
 }
 
 .menu__link {
@@ -44,7 +44,7 @@
     color: #5047D7;
 }
 
-.section-1 {
+.main-hotel {
     display: flex;
     flex-wrap: wrap;
     max-width: 1244px;
@@ -52,7 +52,7 @@
     padding-bottom: 56px;
 }
 
-.section-1 .main-hotel-rating {
+.main-hotel__rating-wrap {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
@@ -60,19 +60,19 @@
     color: #333333;
 }
 
-.section-1 .main-hotel-name {
+.main-hotel__name {
     margin-right: 32px;
     letter-spacing: 0.5px;
 }
 
-.section-1 .main-hotel-stars {
+.main-hotel__stars {
     font-size: 26px;
     padding: 11px;
     color: #FFB801;
-    font-weight: bold
+    font-weight: bold;
 }
 
-.section-1 .main-hotel-address {
+.main-hotel__address {
     font-family: 'Open Sans';
     font-size: 18px;
     color: #666666;
@@ -80,13 +80,13 @@
     font-weight: 400;
 }
 
-.section-1 .main-photo {
+.main-hotel__main-photo {
     max-width: 925px;
     max-height: 428px;
     margin: 32px 32px 16px 0px;
 }
 
-.section-1 aside {
+.main-hotel__aside {
     margin-top: 32px;
     display: flex;
     flex-direction: column;
@@ -95,38 +95,36 @@
     max-width: 250px;
 }
 
-.booking {
+.main-hotel__booking {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-top: auto;
 }
 
-.advantages li {
+.main-hotel__advantages li {
     display: flex;
     align-items: center;
     gap: 25px;
     margin-bottom: 16px;
 }
 
-aside h3 {
+.main-hotel__advantages-title,
+.main-hotel__num-rating {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 16px;
+}
+
+.main-hotel__price {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
 }
 
-aside .num-rating {
-    margin-bottom: 16px;
-}
-
-aside h4 {
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    gap: 9px;
-}
-
-aside a {
+.main-hotel__booking-link {
     display: inline-block;
     padding: 12px 18px;
     background-color: #5047D7;
@@ -137,64 +135,62 @@ aside a {
     font-weight: bold;
 }
 
-.section-1 .thumbnail {
+.main-hotel__thumbnail {
     width: 172px;
     height: 104px;
 }
 
-.section-1 .icon {
+.main-hotel__icon {
     width: 35px;
     height: 35px;
 }
 
-.section-1 figure {
+.main-hotel__thumbnails {
     width: 925px;
     display: flex;
     justify-content: space-between;
 }
 
-
 @media (max-width: 1199px) {
-    .section-1 {
+    .main-hotel {
         display: flex;
         flex-direction: column;
         align-items: stretch;
         align-items: center;
     }
 
-    .section-1 .main-hotel,
-    .section-1 .main-photo,
-    .section-1 aside {
+    .main-hotel__info,
+    .main-hotel__main-photo,
+    .main-hotel__aside {
         width: 100%;
     }
 
-    .section-1 .main-hotel {
+    .main-hotel__info {
         margin-bottom: 16px;
     }
 
-    .section-1 .main-photo,
-    .section-1 figure {
+    .main-hotel__main-photo,
+    .main-hotel__thumbnails {
         width: 100%;
         max-width: 100%;
         display: flex;
         justify-content: space-between;
         margin-bottom: 16px;
-        flex-wrap: wrap; /* Разрешаем перенос, чтобы избежать конфликтов */
+        flex-wrap: wrap;
         gap: 10px;
     }
 
-    .section-1 .thumbnail {
-        flex: 1 1 calc(20% - 10px); /* Устанавливаем одинаковую ширину */
+    .main-hotel__thumbnail {
+        flex: 1 1 calc(20% - 10px);
         height: auto;
-        max-width: 20%; /* Устанавливаем максимальную ширину */
+        max-width: 20%;
     }
 
-    .section-1 aside {
+    .main-hotel__aside {
         margin-top: 32px;
-        padding: 0 16px; /* Добавляем отступы */
+        padding: 0 16px;
     }
 }
-
 
 .section-2 {
     background-color: #F0F0F0;
