@@ -179,36 +179,35 @@
             </form>
         </section>
 
-        <section class="section-5">
-            <div class="title">
-                <h2>Интересное для вас</h2>
+        <section class="interesting-for-you">
+            <div class="interesting-for-you__header">
+                <h2 class="interesting-for-you__title">Интересное для вас</h2>
             </div>
-            <div class="carousel-container">
-                <ul class="interesting-list">
-                    <li>
-                        <img src="images/interesting_list_0.png" alt="Лучший отдых на море" class="interesting-image">
-                        <h4>Лучший отдых на море в сезоне 2020 на море в полном разгаре</h4>
+            <div class="interesting-for-you__carousel carousel-container">
+                <ul class="interesting-for-you__list">
+                    <li class="interesting-for-you__item">
+                        <img src="images/interesting_list_0.png" alt="Лучший отдых на море" class="interesting-for-you__image">
+                        <h4 class="interesting-for-you__description">Лучший отдых на море в сезоне 2020 на море в полном разгаре</h4>
                     </li>
-                    <li>
-                        <img src="images/interesting_list_1.png" alt="Лучший отдых на море" class="interesting-image">
-                        <h4>Лучший отдых на море в сезоне 2020 на море в полном разгаре</h4>
+                    <li class="interesting-for-you__item">
+                        <img src="images/interesting_list_1.png" alt="Лучший отдых на море" class="interesting-for-you__image">
+                        <h4 class="interesting-for-you__description">Лучший отдых на море в сезоне 2020 на море в полном разгаре</h4>
                     </li>
-                    <li>
-                        <img src="images/interesting_list_2.png" alt="Программы заботы о вас" class="interesting-image">
-                        <h4>Программы заботы о вас на отдыхе в отеле на море</h4>
+                    <li class="interesting-for-you__item">
+                        <img src="images/interesting_list_2.png" alt="Программы заботы о вас" class="interesting-for-you__image">
+                        <h4 class="interesting-for-you__description">Программы заботы о вас на отдыхе в отеле на море</h4>
                     </li>
-                    <li>
-                        <img src="images/interesting_list_3.png" alt="В отеле всё спокойно" class="interesting-image">
-                        <h4>В отеле всё спокойно</h4>
+                    <li class="interesting-for-you__item">
+                        <img src="images/interesting_list_3.png" alt="В отеле всё спокойно" class="interesting-for-you__image">
+                        <h4 class="interesting-for-you__description">В отеле всё спокойно</h4>
                     </li>
-                    <li>
-                        <img src="images/interesting_list_4.png" alt="Программы заботы о вас на отдыхе в отеле на море"
-                            class="interesting-image">
-                        <h4>Программы заботы о вас на отдыхе в отеле на море</h4>
+                    <li class="interesting-for-you__item">
+                        <img src="images/interesting_list_4.png" alt="Программы заботы о вас на отдыхе в отеле на море" class="interesting-for-you__image">
+                        <h4 class="interesting-for-you__description">Программы заботы о вас на отдыхе в отеле на море</h4>
                     </li>
                 </ul>
             </div>
-        </section>
+        </section>        
 
     </main>
 
@@ -248,7 +247,7 @@
     <script>
 
         window.onload = function () {
-            centerItemInView('.section-5 .carousel-container', '.section-5 .interesting-list li:nth-child(3)');
+            centerItemInView('.interesting-for-you__carousel', '.interesting-for-you__list li:nth-child(3)');
             centerItemInView('.similar-hotels__carousel', 'similar-hotels__list li:nth-child(1)');
         };
 
@@ -266,7 +265,7 @@
             });
         }
 
-        enableHorizontalScroll('.section-5 .carousel-container');
+        enableHorizontalScroll('.interesting-for-you__carousel');
         enableHorizontalScroll('.similar-hotels__carousel');
 
     </script>
