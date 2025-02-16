@@ -117,41 +117,39 @@
             </ul>
         </section>
         
-
-        <section class="section-3">
-            <div>
-                <h2>Похожие отели</h2>
+        <section class="similar-hotels">
+            <div class="similar-hotels__header">
+                <h2 class="similar-hotels__title">Похожие отели</h2>
             </div>
-            <div class="carousel-container">
-                <ul class="similar-hotels">
-                    <li>
-                        <img src="images/similar_hotels_0.png" alt="Limak limba hotel" class="hotel-image">
-                        <div class="similar-hotels-content">
-                            <img src="images/stars.png" alt="Рейтинг" class="rating-image">
-                            <h3>Limak limba hotel</h3>
-                            <p>На песчаном побережье Средиземного моря, у подножия горы Олимп</p>
+            <div class="similar-hotels__carousel carousel-container">
+                <ul class="similar-hotels__list">
+                    <li class="similar-hotels__item">
+                        <img src="images/similar_hotels_0.png" alt="Limak limba hotel" class="similar-hotels__image">
+                        <div class="similar-hotels__content">
+                            <img src="images/stars.png" alt="Рейтинг" class="similar-hotels__rating-image">
+                            <h3 class="similar-hotels__name">Limak limba hotel</h3>
+                            <p class="similar-hotels__description">На песчаном побережье Средиземного моря, у подножия горы Олимп</p>
                         </div>
                     </li>
-                    <li>
-                        <img src="images/similar_hotels_1.png" alt="Limak park hotel" class="hotel-image">
-                        <div class="similar-hotels-content">
-                            <img src="images/stars.png" alt="Рейтинг" class="rating-image">
-                            <h3>Limak park hotel</h3>
-                            <p>Детишки смогут поплавать в бассейне с водными горками, поиграть на площадке</p>
+                    <li class="similar-hotels__item">
+                        <img src="images/similar_hotels_1.png" alt="Limak park hotel" class="similar-hotels__image">
+                        <div class="similar-hotels__content">
+                            <img src="images/stars.png" alt="Рейтинг" class="similar-hotels__rating-image">
+                            <h3 class="similar-hotels__name">Limak park hotel</h3>
+                            <p class="similar-hotels__description">Детишки смогут поплавать в бассейне с водными горками, поиграть на площадке</p>
                         </div>
                     </li>
-                    <li>
-                        <img src="images/similar_hotels_2.png" alt="Viking park" class="hotel-image">
-                        <div class="similar-hotels-content">
-                            <img src="images/stars.png" alt="Рейтинг" class="rating-image">
-                            <h3>Viking park</h3>
-                            <p>Строго элегантная гостиница Viking park 4* находится на южном побережье Турции</p>
+                    <li class="similar-hotels__item">
+                        <img src="images/similar_hotels_2.png" alt="Viking park" class="similar-hotels__image">
+                        <div class="similar-hotels__content">
+                            <img src="images/stars.png" alt="Рейтинг" class="similar-hotels__rating-image">
+                            <h3 class="similar-hotels__name">Viking park</h3>
+                            <p class="similar-hotels__description">Строго элегантная гостиница Viking park 4* находится на южном побережье Турции</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-
 
         <section class="section-4">
             <form action="/" class="login-form">
@@ -252,7 +250,7 @@
 
         window.onload = function () {
             centerItemInView('.section-5 .carousel-container', '.section-5 .interesting-list li:nth-child(3)');
-            centerItemInView('.section-3 .carousel-container', '.section-3 .similar-hotels li:nth-child(1)');
+            centerItemInView('.similar-hotels__carousel', 'similar-hotels__list li:nth-child(1)');
         };
 
         function centerItemInView(containerSelector, itemSelector) {
@@ -270,7 +268,7 @@
         }
 
         enableHorizontalScroll('.section-5 .carousel-container');
-        enableHorizontalScroll('.section-3 .carousel-container');
+        enableHorizontalScroll('.similar-hotels__carousel');
 
     </script>
 </body>
