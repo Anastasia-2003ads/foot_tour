@@ -4,44 +4,44 @@
     padding: 0;
 }
 
-.header-container {
+.header {
+    padding: 32px 0 56px;
+}
+
+.header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1244px;
-    margin: 32px auto 56px auto;
+    margin: 0 auto;
     font-size: 18px;
     font-weight: 400;
 }
 
-.menu {
-    display: flex;
-    gap: 56px;
-    margin: 16px auto;
+.header__logo {
+    width: 55px;
+    margin-right: 10px;
 }
 
-.menu a {
-    text-decoration: none;
-    color: #333333;
-}
-
-img {
-    border-radius: 8px;
-}
-
-.login {
-    text-decoration: none;
-    color: #5047D7;
-}
-
-.header-title {
+.header__title {
     color: var(--button-color);
     letter-spacing: 0.5px;
 }
 
-.logo {
-    width: 55px;
-    margin-right: 10px;
+.header__menu {
+    display: flex;
+    gap: 56px;
+    margin: 16px auto; /* Центрирование блока меню в родителе */
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #333333;
+}
+
+.header__login {
+    text-decoration: none;
+    color: #5047D7;
 }
 
 .section-1 {
