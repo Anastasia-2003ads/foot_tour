@@ -32,16 +32,14 @@ function displayHotelInfo(hotelInfo) {
 }
 
 function displayCardsHotelFeatures(dataHotelFeatures) {
-    let hotelFeaturesList = document.getElementById('hotelFeaturesList');
+    const hotelFeaturesList = document.getElementById('hotelFeaturesList');
 
     if (hotelFeaturesList) {
-        // Очистка предыдущего содержимого списка
         hotelFeaturesList.innerHTML = '';
 
-        // Генерация элементов на основе данных
         dataHotelFeatures.forEach(feature => {
             const listItem = document.createElement('li');
-            listItem.className = 'hotel-features__item';
+            listItem.className = 'hotel-features__item swiper-slide';
 
             listItem.innerHTML = `
                 <img src="${feature.img}" alt="${feature.title}" class="hotel-features__image">
@@ -52,9 +50,33 @@ function displayCardsHotelFeatures(dataHotelFeatures) {
 
             hotelFeaturesList.appendChild(listItem);
         });
+
+        // Карусель (слайдер)
+        const slider = document.querySelector('.swiper-container');
+
+        if (slider) {
+            const swiper = new Swiper(slider, {
+                // Дополнительные параметры
+                slidesPerView: 4, // Количество слайдов на экране
+                spaceBetween: 32, // Расстояние между слайдами
+                loop: true,  // Зацикливание слайдов
+    
+                // Пагинация
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+    
+                // Навигационные стрелки
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }
+            });
+        }
+
     } else {
-        console.log('Error: hotelFeaturesList not Found')
-    };
+        console.log('Error: hotelFeaturesList not found');
+    }
 };
 
 /**

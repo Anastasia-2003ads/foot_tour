@@ -24,6 +24,11 @@
             "title": "Развлечения",
             "description": "Теннисный корт, три бассейна, приставка и даже больше",
             "img": "images/feature_image_entertainments.jpg"
+        },
+        {
+            "title": "Пляж",
+            "description": "Наша гостиница имеет крутой пляж, где вы можете расслабиться",
+            "img": "images/feature_image_beach.jpg"
         }
     ]
 }
