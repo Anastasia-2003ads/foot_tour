@@ -1,4 +1,19 @@
-let listHotelFeaturesTitles = ['Пляж', 'Отель', 'Питание в отеле', 'Развлечения'];
+let listHotelFeaturesTitles = [
+    'Пляж', 
+    'Отель', 
+    'Питание в отеле', 
+    'Развлечения'
+];
+
+function displayCardsHotelFeatures() {
+    const cardsHotelFeatures = document.querySelector('.hotel-features');
+    if (cardsHotelFeatures) {
+        const queryTitles = document.querySelectorAll('.hotel-features__title');
+        queryTitles.forEach((node, i) => {
+            node.textContent = listHotelFeaturesTitles[i];
+        });
+    }
+};
 
 /**
  * Центрирование элемента внутри прокручиваемого контейнера
@@ -59,18 +74,11 @@ function initializeFeatures() {
         document.querySelector('.similar-hotels__list li:nth-child(1)')
     );
 
-    const cardsHotelFeatures = document.querySelector('.hotel-features');
-    if (cardsHotelFeatures) {
-        const queryTitles = document.querySelectorAll('.hotel-features__title');
-        queryTitles.forEach((node, i) => {
-            node.textContent = listHotelFeaturesTitles[i];
-        });
-    }
-
     // Активация горизонтальной прокрутки для каруселей
     enableHorizontalScroll(document.querySelector('.interesting-for-you__carousel'));
     enableHorizontalScroll(document.querySelector('.similar-hotels__carousel'));
 
+    displayCardsHotelFeatures();
     scrollToFormSection();
 }
 
