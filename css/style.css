@@ -444,6 +444,12 @@
     color: #fff;
     padding: 20px 16px;
     margin: 0;
+    transition: font-size 0.3s ease;
+}
+
+.interesting-for-you__description:hover {
+    font-size: calc(100% + 3px);
+    transition: font-size 0.3s ease;
 }
 
 .footer {
