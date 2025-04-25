@@ -45,9 +45,13 @@ function enableHorizontalScroll(containerSelector) {
 }
 
 window.onload = function () {
-    // Вызываем функцию centerItemInView для определенных каруселей и элементов после полной загрузки окна
-    centerItemInView('.interesting-for-you__carousel', '.interesting-for-you__list li:nth-child(3)');
-    centerItemInView('.similar-hotels__carousel', '.similar-hotels__list li:nth-child(1)');
+    const condition = true;
+
+    if (condition) {
+        // Вызываем функцию centerItemInView для определенных каруселей и элементов после полной загрузки окна
+        centerItemInView('.interesting-for-you__carousel', '.interesting-for-you__list li:nth-child(3)');
+        centerItemInView('.similar-hotels__carousel', '.similar-hotels__list li:nth-child(1)');
+    }
 };
 
 // Активируем горизонтальную прокрутку для определенных каруселей
