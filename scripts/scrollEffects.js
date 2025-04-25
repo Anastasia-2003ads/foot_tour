@@ -28,6 +28,23 @@ function enableHorizontalScroll(container) {
     }
 }
 
+function scrollToFormSection() {
+    // Найти кнопку "Войти" в шапке сайта
+    const loginButton = document.querySelector('.header__login');
+
+    // Найти секцию с формой
+    const loginFormSection = document.querySelector('.login-form');
+
+    // Добавить обработчик события клика на кнопку
+    loginButton.addEventListener('click', function (event) {
+        // Отменить стандартное поведение ссылки
+        event.preventDefault();
+
+        // Выполнить плавный скролл к секции с формой
+        loginFormSection.scrollIntoView({behavior: 'smooth'});
+    });
+}
+
 /**
  * Инициализация каруселей и их элементов, а также установка заголовков 
  * после полной загрузки окна
@@ -53,6 +70,8 @@ function initializeFeatures() {
     // Активация горизонтальной прокрутки для каруселей
     enableHorizontalScroll(document.querySelector('.interesting-for-you__carousel'));
     enableHorizontalScroll(document.querySelector('.similar-hotels__carousel'));
+
+    scrollToFormSection();
 }
 
 window.onload = initializeFeatures;
