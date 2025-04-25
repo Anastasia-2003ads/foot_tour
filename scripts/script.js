@@ -142,6 +142,31 @@ function preloaderPage() {
     }
 };
 
+function regForm() {
+    registrationPopup.addEventListener('submit', event => {
+        event.preventDefault(); // Предотвращаем отправку формы
+
+        const phoneOrEmail = registrationPopup.querySelector('#phone-email').value;
+        const password = registrationPopup.querySelector('#password').value;
+
+        if (phoneOrEmail.length < 3) {
+            errorMessage.textContent = 'Имя пользователя должно содержать не менее 3 символов';
+            return;
+        }
+
+        if (password.length < 8) {
+            errorMessage.textContent = 'Пароль должен содержать не менее 8 символов';
+            return;
+        }
+
+        // Запишем логин
+        window.localStorage.setItem("phone-email", phoneOrEmail);
+
+        // Очистка формы
+        document.getElementById('login-form').reset();
+    });
+};
+
 /**
  * Инициализация каруселей и их элементов, а также установка заголовков 
  * после полной загрузки окна
@@ -164,6 +189,8 @@ function initializeFeatures() {
 
     getDataJsonAndDisplay();
     scrollToFormSection();
+
+    regForm();
 }
 
 window.onload = initializeFeatures;
