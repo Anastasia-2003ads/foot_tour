@@ -27,26 +27,47 @@ const dataHotelFeatures = [
     }
 ];
 
+function displayHotelInfo() {
+    const hotelName = document.querySelector('.main-hotel__name');
+    if (hotelName) {
+        hotelName.textContent = hotelInfo.name;
+    }
+
+    const hotelStars = document.querySelector('.main-hotel__stars');
+    if (hotelStars) {
+        hotelStars.innerHTML = '★ '.repeat(hotelInfo.stars).trim();
+    }
+
+    const hotelAddress = document.querySelector('.main-hotel__address');
+    if (hotelAddress) {
+        hotelAddress.textContent = hotelInfo.address;
+    }
+}
+
 function displayCardsHotelFeatures() {
     let hotelFeaturesList = document.getElementById('hotelFeaturesList');
 
-    // Очистка предыдущего содержимого списка
-    hotelFeaturesList.innerHTML = '';
+    if (hotelFeaturesList) {
+        // Очистка предыдущего содержимого списка
+        hotelFeaturesList.innerHTML = '';
 
-    // Генерация элементов на основе данных
-    dataHotelFeatures.forEach(feature => {
-        const listItem = document.createElement('li');
-        listItem.className = 'hotel-features__item';
+        // Генерация элементов на основе данных
+        dataHotelFeatures.forEach(feature => {
+            const listItem = document.createElement('li');
+            listItem.className = 'hotel-features__item';
 
-        listItem.innerHTML = `
-            <img src="${feature.img}" alt="${feature.title}" class="hotel-features__image">
-            <h3 class="hotel-features__title">${feature.title}</h3>
-            <p class="hotel-features__description">${feature.description}</p>
-            <button class="hotel-features__button btn-more">Подробнее</button>
-        `;
+            listItem.innerHTML = `
+                <img src="${feature.img}" alt="${feature.title}" class="hotel-features__image">
+                <h3 class="hotel-features__title">${feature.title}</h3>
+                <p class="hotel-features__description">${feature.description}</p>
+                <button class="hotel-features__button btn-more">Подробнее</button>
+            `;
 
-        hotelFeaturesList.appendChild(listItem);
-    });
+            hotelFeaturesList.appendChild(listItem);
+        });
+    } else {
+        console.log('Error: hotelFeaturesList not Found')
+    };
 };
 
 /**
@@ -112,6 +133,7 @@ function initializeFeatures() {
     enableHorizontalScroll(document.querySelector('.interesting-for-you__carousel'));
     enableHorizontalScroll(document.querySelector('.similar-hotels__carousel'));
 
+    displayHotelInfo();
     displayCardsHotelFeatures();
     scrollToFormSection();
 }
