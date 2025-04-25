@@ -4,8 +4,20 @@
     padding: 0;
 }
 
+@keyframes slideHeaderFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .header {
     padding: 32px 0 56px;
+    animation: slideHeaderFromTop 0.8s ease-out forwards;
 }
 
 .header__container {

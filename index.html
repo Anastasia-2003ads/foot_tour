@@ -8,218 +8,242 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/animation.css">
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
 
-    <header class="header">
-        <div class="header__container">
-            <img src="images/logo.png" alt="Логотип" class="header__logo">
-            <h2 class="header__title">Тур Ногами</h2>
-            <nav class="header__menu menu">
-                <a href="#" class="menu__link">Туры</a>
-                <a href="#" class="menu__link">Идеи</a>
-                <a href="#" class="menu__link">О нас</a>
-                <a href="#" class="menu__link">Помощь</a>
-            </nav>
-            <a href="login.html" class="header__login">Войти</a>
-        </div>
-    </header>
+    <div class="content">
 
-    <main>
-
-        <section class="main-hotel">
-            <div class="main-hotel__info">
-                <div class="main-hotel__rating-wrap">
-                    <h1 class="main-hotel__name"></h1>
-                    <div class="main-hotel__stars"></div>
-                </div>
-                <div class="main-hotel__address"></div>
+        <header class="header">
+            <div class="header__container">
+                <img src="images/logo.png" alt="Логотип" class="header__logo">
+                <h2 class="header__title">Тур Ногами</h2>
+                <nav class="header__menu menu">
+                    <a href="#" class="menu__link">Туры</a>
+                    <a href="#" class="menu__link">Идеи</a>
+                    <a href="#" class="menu__link">О нас</a>
+                    <a href="#" class="menu__link">Помощь</a>
+                </nav>
+                <a href="login.html" class="header__login">Войти</a>
             </div>
-    
-            <div class="main-hotel__images">
-                <img src="images/main_photo.jpg" alt="Фото" class="main-hotel__main-photo">
-                <figure class="main-hotel__thumbnails">
-                    <img src="images/thumbnail_0.jpg" alt="Фото" class="main-hotel__thumbnail">
-                    <img src="images/thumbnail_1.jpg" alt="Фото" class="main-hotel__thumbnail">
-                    <img src="images/thumbnail_2.jpg" alt="Фото" class="main-hotel__thumbnail">
-                    <img src="images/thumbnail_3.jpg" alt="Фото" class="main-hotel__thumbnail">
-                    <img src="images/thumbnail_4.png" alt="Фото" class="main-hotel__thumbnail">
-                </figure>
-            </div>
-    
-            <aside class="main-hotel__aside">
-                <h4 class="main-hotel__num-rating">
-                    <img src="images/rating.png" alt="Рейтинг"> Отлично
-                </h4>
-                <h4 class="main-hotel__advantages-title">Преимущества</h4>
-                <ul class="main-hotel__advantages">
-                    <li class="main-hotel__advantage">
-                        <img src="images/icon_0.png" alt="Иконка" class="main-hotel__icon">
-                        <p class="main-hotel__advantage-text">До пляжа - 200м</p>
-                    </li>
-                    <li class="main-hotel__advantage">
-                        <img src="images/icon_1.png" alt="Иконка" class="main-hotel__icon">
-                        <p class="main-hotel__advantage-text">Аэропорт - 65км</p>
-                    </li>
-                    <li class="main-hotel__advantage">
-                        <img src="images/icon_2.png" alt="Иконка" class="main-hotel__icon">
-                        <p class="main-hotel__advantage-text">Трансфер</p>
-                    </li>
-                    <li class="main-hotel__advantage">
-                        <img src="images/icon_3.png" alt="Иконка" class="main-hotel__icon">
-                        <p class="main-hotel__advantage-text">Wi-fi в номере</p>
-                    </li>
-                    <li class="main-hotel__advantage">
-                        <img src="images/icon_4.png" alt="Иконка" class="main-hotel__icon">
-                        <p class="main-hotel__advantage-text">Развлечения</p>
-                    </li>
-                    <li class="main-hotel__advantage">
-                        <img src="images/icon_5.png" alt="Иконка" class="main-hotel__icon">
-                        <p class="main-hotel__advantage-text">Не требуется виза</p>
-                    </li>
-                </ul>
-                <div class="main-hotel__booking">
-                    <h3 class="main-hotel__price">от 4500 Р/ночь</h3>
-                    <h3><a href="booking.html" class="main-hotel__booking-link button-link">Забронировать</a></h3>
-                </div>
-            </aside>
-        </section>
+        </header>
 
-        
-        <section class="hotel-features">
-            <ul class="hotel-features__list" id="hotelFeaturesList">
-                <!-- Элементы добавляются сюда динамически -->
-            </ul>
-        </section>
+        <main>
 
-        
-        <section class="similar-hotels">
-            <div class="similar-hotels__header">
-                <h2 class="similar-hotels__title">Похожие отели</h2>
-            </div>
-            <div class="similar-hotels__carousel carousel-container">
-                <ul class="similar-hotels__list">
-                    <li class="similar-hotels__item">
-                        <img src="images/similar_hotels_0.png" alt="Limak limba hotel" class="similar-hotels__image">
-                        <div class="similar-hotels__content">
-                            <img src="images/stars.png" alt="Рейтинг" class="similar-hotels__rating-image">
-                            <h3 class="similar-hotels__name">Limak limba hotel</h3>
-                            <p class="similar-hotels__description">На песчаном побережье Средиземного моря, у подножия горы Олимп</p>
-                        </div>
-                    </li>
-                    <li class="similar-hotels__item">
-                        <img src="images/similar_hotels_1.png" alt="Limak park hotel" class="similar-hotels__image">
-                        <div class="similar-hotels__content">
-                            <img src="images/stars.png" alt="Рейтинг" class="similar-hotels__rating-image">
-                            <h3 class="similar-hotels__name">Limak park hotel</h3>
-                            <p class="similar-hotels__description">Детишки смогут поплавать в бассейне с водными горками, поиграть на площадке</p>
-                        </div>
-                    </li>
-                    <li class="similar-hotels__item">
-                        <img src="images/similar_hotels_2.png" alt="Viking park" class="similar-hotels__image">
-                        <div class="similar-hotels__content">
-                            <img src="images/stars.png" alt="Рейтинг" class="similar-hotels__rating-image">
-                            <h3 class="similar-hotels__name">Viking park</h3>
-                            <p class="similar-hotels__description">Строго элегантная гостиница Viking park 4* находится на южном побережье Турции</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="login-form">
-            <form action="/" class="login-form__container">
-                <h2 class="login-form__title">Вход</h2>
-                <div class="login-form__input-group">
-                    <label for="phone-email" class="login-form__label">Телефон или почта</label>
-                    <input type="text" id="phone-email" class="login-form__input" name="phone-email" placeholder="Введите телефон или почту" required>
-                </div>
-                <div class="login-form__input-group">
-                    <label for="password" class="login-form__label">Пароль</label>
-                    <input type="password" id="password" class="login-form__input" name="password" placeholder="Введите пароль" required>
-                </div>
-                <a href="#" class="login-form__link">Забыли пароль?</a>
-                <div class="login-form__social-login">
-                    <p class="login-form__social-text">Войти с помощью</p>
-                    <div class="login-form__social-icons">
-                        <span class="login-form__icon"></span>
-                        <span class="login-form__icon"></span>
-                        <span class="login-form__icon"></span>
-                        <span class="login-form__icon"></span>
+            <section class="main-hotel">
+                <div class="main-hotel__info">
+                    <div class="main-hotel__rating-wrap">
+                        <h1 class="main-hotel__name"></h1>
+                        <div class="main-hotel__stars"></div>
                     </div>
+                    <div class="main-hotel__address"></div>
                 </div>
-                <a href="#" class="login-form__link">Зарегистрироваться</a>
-                <div class="login-form__button-wrapper">
-                    <button type="submit" class="login-form__button">Войти</button>
+
+                <div class="main-hotel__images">
+                    <img src="images/main_photo.jpg" alt="Фото" class="main-hotel__main-photo">
+                    <figure class="main-hotel__thumbnails">
+                        <img src="images/thumbnail_0.jpg" alt="Фото" class="main-hotel__thumbnail">
+                        <img src="images/thumbnail_1.jpg" alt="Фото" class="main-hotel__thumbnail">
+                        <img src="images/thumbnail_2.jpg" alt="Фото" class="main-hotel__thumbnail">
+                        <img src="images/thumbnail_3.jpg" alt="Фото" class="main-hotel__thumbnail">
+                        <img src="images/thumbnail_4.png" alt="Фото" class="main-hotel__thumbnail">
+                    </figure>
                 </div>
-            </form>
-        </section>
 
-        <section class="interesting-for-you">
-            <div class="interesting-for-you__header">
-                <h2 class="interesting-for-you__title">Интересное для вас</h2>
-            </div>
-            <div class="interesting-for-you__carousel carousel-container">
-                <ul class="interesting-for-you__list">
-                    <li class="interesting-for-you__item">
-                        <img src="images/interesting_list_0.png" alt="Лучший отдых на море" class="interesting-for-you__image">
-                        <h4 class="interesting-for-you__description">Лучший отдых на море в сезоне 2020 на море в полном разгаре</h4>
-                    </li>
-                    <li class="interesting-for-you__item">
-                        <img src="images/interesting_list_1.png" alt="Лучший отдых на море" class="interesting-for-you__image">
-                        <h4 class="interesting-for-you__description">Лучший отдых на море в сезоне 2020 на море в полном разгаре</h4>
-                    </li>
-                    <li class="interesting-for-you__item">
-                        <img src="images/interesting_list_2.png" alt="Программы заботы о вас" class="interesting-for-you__image">
-                        <h4 class="interesting-for-you__description">Программы заботы о вас на отдыхе в отеле на море</h4>
-                    </li>
-                    <li class="interesting-for-you__item">
-                        <img src="images/interesting_list_3.png" alt="В отеле всё спокойно" class="interesting-for-you__image">
-                        <h4 class="interesting-for-you__description">В отеле всё спокойно</h4>
-                    </li>
-                    <li class="interesting-for-you__item">
-                        <img src="images/interesting_list_4.png" alt="Программы заботы о вас на отдыхе в отеле на море" class="interesting-for-you__image">
-                        <h4 class="interesting-for-you__description">Программы заботы о вас на отдыхе в отеле на море</h4>
-                    </li>
-                </ul>
-            </div>
-        </section>        
+                <aside class="main-hotel__aside">
+                    <h4 class="main-hotel__num-rating">
+                        <img src="images/rating.png" alt="Рейтинг"> Отлично
+                    </h4>
+                    <h4 class="main-hotel__advantages-title">Преимущества</h4>
+                    <ul class="main-hotel__advantages">
+                        <li class="main-hotel__advantage">
+                            <img src="images/icon_0.png" alt="Иконка" class="main-hotel__icon">
+                            <p class="main-hotel__advantage-text">До пляжа - 200м</p>
+                        </li>
+                        <li class="main-hotel__advantage">
+                            <img src="images/icon_1.png" alt="Иконка" class="main-hotel__icon">
+                            <p class="main-hotel__advantage-text">Аэропорт - 65км</p>
+                        </li>
+                        <li class="main-hotel__advantage">
+                            <img src="images/icon_2.png" alt="Иконка" class="main-hotel__icon">
+                            <p class="main-hotel__advantage-text">Трансфер</p>
+                        </li>
+                        <li class="main-hotel__advantage">
+                            <img src="images/icon_3.png" alt="Иконка" class="main-hotel__icon">
+                            <p class="main-hotel__advantage-text">Wi-fi в номере</p>
+                        </li>
+                        <li class="main-hotel__advantage">
+                            <img src="images/icon_4.png" alt="Иконка" class="main-hotel__icon">
+                            <p class="main-hotel__advantage-text">Развлечения</p>
+                        </li>
+                        <li class="main-hotel__advantage">
+                            <img src="images/icon_5.png" alt="Иконка" class="main-hotel__icon">
+                            <p class="main-hotel__advantage-text">Не требуется виза</p>
+                        </li>
+                    </ul>
+                    <div class="main-hotel__booking">
+                        <h3 class="main-hotel__price">от 4500 Р/ночь</h3>
+                        <h3><a href="booking.html" class="main-hotel__booking-link button-link">Забронировать</a></h3>
+                    </div>
+                </aside>
+            </section>
 
-    </main>
 
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__left">
-                <img src="images/footer_logo.png" alt="Логотип" class="footer__logo">
-                <h2 class="footer__title">Тур Ногами</h2>
+            <section class="hotel-features">
+                <ul class="hotel-features__list" id="hotelFeaturesList">
+                    <!-- Элементы добавляются сюда динамически -->
+                </ul>
+            </section>
+
+
+            <section class="similar-hotels">
+                <div class="similar-hotels__header">
+                    <h2 class="similar-hotels__title">Похожие отели</h2>
+                </div>
+                <div class="similar-hotels__carousel carousel-container">
+                    <ul class="similar-hotels__list">
+                        <li class="similar-hotels__item">
+                            <img src="images/similar_hotels_0.png" alt="Limak limba hotel"
+                                class="similar-hotels__image">
+                            <div class="similar-hotels__content">
+                                <img src="images/stars.png" alt="Рейтинг" class="similar-hotels__rating-image">
+                                <h3 class="similar-hotels__name">Limak limba hotel</h3>
+                                <p class="similar-hotels__description">На песчаном побережье Средиземного моря, у
+                                    подножия горы Олимп</p>
+                            </div>
+                        </li>
+                        <li class="similar-hotels__item">
+                            <img src="images/similar_hotels_1.png" alt="Limak park hotel" class="similar-hotels__image">
+                            <div class="similar-hotels__content">
+                                <img src="images/stars.png" alt="Рейтинг" class="similar-hotels__rating-image">
+                                <h3 class="similar-hotels__name">Limak park hotel</h3>
+                                <p class="similar-hotels__description">Детишки смогут поплавать в бассейне с водными
+                                    горками, поиграть на площадке</p>
+                            </div>
+                        </li>
+                        <li class="similar-hotels__item">
+                            <img src="images/similar_hotels_2.png" alt="Viking park" class="similar-hotels__image">
+                            <div class="similar-hotels__content">
+                                <img src="images/stars.png" alt="Рейтинг" class="similar-hotels__rating-image">
+                                <h3 class="similar-hotels__name">Viking park</h3>
+                                <p class="similar-hotels__description">Строго элегантная гостиница Viking park 4*
+                                    находится на южном побережье Турции</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="login-form">
+                <form action="/" class="login-form__container">
+                    <h2 class="login-form__title">Вход</h2>
+                    <div class="login-form__input-group">
+                        <label for="phone-email" class="login-form__label">Телефон или почта</label>
+                        <input type="text" id="phone-email" class="login-form__input" name="phone-email"
+                            placeholder="Введите телефон или почту" required>
+                    </div>
+                    <div class="login-form__input-group">
+                        <label for="password" class="login-form__label">Пароль</label>
+                        <input type="password" id="password" class="login-form__input" name="password"
+                            placeholder="Введите пароль" required>
+                    </div>
+                    <a href="#" class="login-form__link">Забыли пароль?</a>
+                    <div class="login-form__social-login">
+                        <p class="login-form__social-text">Войти с помощью</p>
+                        <div class="login-form__social-icons">
+                            <span class="login-form__icon"></span>
+                            <span class="login-form__icon"></span>
+                            <span class="login-form__icon"></span>
+                            <span class="login-form__icon"></span>
+                        </div>
+                    </div>
+                    <a href="#" class="login-form__link">Зарегистрироваться</a>
+                    <div class="login-form__button-wrapper">
+                        <button type="submit" class="login-form__button">Войти</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="interesting-for-you">
+                <div class="interesting-for-you__header">
+                    <h2 class="interesting-for-you__title">Интересное для вас</h2>
+                </div>
+                <div class="interesting-for-you__carousel carousel-container">
+                    <ul class="interesting-for-you__list">
+                        <li class="interesting-for-you__item">
+                            <img src="images/interesting_list_0.png" alt="Лучший отдых на море"
+                                class="interesting-for-you__image">
+                            <h4 class="interesting-for-you__description">Лучший отдых на море в сезоне 2020 на море в
+                                полном разгаре</h4>
+                        </li>
+                        <li class="interesting-for-you__item">
+                            <img src="images/interesting_list_1.png" alt="Лучший отдых на море"
+                                class="interesting-for-you__image">
+                            <h4 class="interesting-for-you__description">Лучший отдых на море в сезоне 2020 на море в
+                                полном разгаре</h4>
+                        </li>
+                        <li class="interesting-for-you__item">
+                            <img src="images/interesting_list_2.png" alt="Программы заботы о вас"
+                                class="interesting-for-you__image">
+                            <h4 class="interesting-for-you__description">Программы заботы о вас на отдыхе в отеле на
+                                море</h4>
+                        </li>
+                        <li class="interesting-for-you__item">
+                            <img src="images/interesting_list_3.png" alt="В отеле всё спокойно"
+                                class="interesting-for-you__image">
+                            <h4 class="interesting-for-you__description">В отеле всё спокойно</h4>
+                        </li>
+                        <li class="interesting-for-you__item">
+                            <img src="images/interesting_list_4.png"
+                                alt="Программы заботы о вас на отдыхе в отеле на море"
+                                class="interesting-for-you__image">
+                            <h4 class="interesting-for-you__description">Программы заботы о вас на отдыхе в отеле на
+                                море</h4>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__left">
+                    <img src="images/footer_logo.png" alt="Логотип" class="footer__logo">
+                    <h2 class="footer__title">Тур Ногами</h2>
+                </div>
+                <div class="footer__right">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Акции отеля</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Блог</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Все новости</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Пирсы</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Расположение</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Фотогалерея</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer__right">
-                <ul class="footer__list">
-                    <li class="footer__item"><a href="#" class="footer__link">Акции отеля</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Блог</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Все новости</a></li>
-                </ul>
-                <ul class="footer__list">
-                    <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Пирсы</a></li>
-                </ul>
-                <ul class="footer__list">
-                    <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Расположение</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Фотогалерея</a></li>
-                </ul>
+            <div class="footer__created-by">
+                <p>© Сайт создан Опалевой Алиной <br>
+                    и Сухановой Анастасией ЭК-31</p>
             </div>
-        </div>
-        <div class="footer__created-by">
-            <p>© Сайт создан Опалевой Алиной <br>
-                и Сухановой Анастасией ЭК-31</p>
-        </div>
-    </footer>    
+        </footer>
+    </div>
 
     <script src="scripts/script.js"></script>
-    
+
 </body>
 
 </html>

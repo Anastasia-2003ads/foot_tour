@@ -1,33 +1,20 @@
-const hotelInfo = {
-    'name': 'PGS Kiris Resort',
-    'stars': 5,
-    'address': 'Kiriş, Sahil Cd. No 9, 07980 Kemer/Antalya, Турция'
+function getDataJsonAndDisplay() {
+    fetch('data.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Вызов функций с данными
+            displayHotelInfo(data.hotelInfo);
+            displayCardsHotelFeatures(data.dataHotelFeatures);
+        })
+        .catch(error => console.error('Fetch error:', error));
 };
 
-const dataHotelFeatures = [
-    {
-        'title': 'Пляж',
-        'description': 'Наша гостиница имеет крутой пляж, где вы можете расслабиться',
-        'img': 'images/feature_image_beach.jpg'
-    },
-    {
-        'title': 'Отель',
-        'description': 'В этом разделе вы сможете узнать нашу гостиницу лучше',
-        'img': 'images/feature_image_hotel.jpg'
-    },
-    {
-        'title': 'Питание в отеле',
-        'description': 'Мы предоставляем трёхразовое питание за дополнительную плату',
-        'img': 'images/feature_image_meals.jpg'
-    },
-    {
-        'title': 'Развлечения',
-        'description': 'Теннисный корт, три бассейна, приставка и даже больше',
-        'img': 'images/feature_image_entertainments.jpg'
-    }
-];
-
-function displayHotelInfo() {
+function displayHotelInfo(hotelInfo) {
     const hotelName = document.querySelector('.main-hotel__name');
     if (hotelName) {
         hotelName.textContent = hotelInfo.name;
@@ -44,7 +31,7 @@ function displayHotelInfo() {
     }
 }
 
-function displayCardsHotelFeatures() {
+function displayCardsHotelFeatures(dataHotelFeatures) {
     let hotelFeaturesList = document.getElementById('hotelFeaturesList');
 
     if (hotelFeaturesList) {
@@ -115,11 +102,31 @@ function scrollToFormSection() {
     });
 }
 
+function preloaderPage() {
+    const preloader = document.querySelector('.preloader');
+    const content = document.querySelector('.content');
+    if (preloader && content) {
+        setTimeout(() => {
+            // Скрываем прелоадер
+            preloader.style.opacity = '0';
+            preloader.style.visibility = 'hidden';
+
+            // Показываем контент
+            content.style.display = 'block';
+
+            // Удаляем элемент из DOM
+            preloader.remove();
+        }, 3000); // Задержка 3 секунды
+    }
+};
+
 /**
  * Инициализация каруселей и их элементов, а также установка заголовков 
  * после полной загрузки окна
  */
 function initializeFeatures() {
+    preloaderPage();
+    
     centerItemInView(
         document.querySelector('.interesting-for-you__carousel'),
         document.querySelector('.interesting-for-you__list li:nth-child(3)')
@@ -133,8 +140,7 @@ function initializeFeatures() {
     enableHorizontalScroll(document.querySelector('.interesting-for-you__carousel'));
     enableHorizontalScroll(document.querySelector('.similar-hotels__carousel'));
 
-    displayHotelInfo();
-    displayCardsHotelFeatures();
+    getDataJsonAndDisplay();
     scrollToFormSection();
 }
 
