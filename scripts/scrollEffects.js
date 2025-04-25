@@ -1,18 +1,52 @@
-let listHotelFeaturesTitles = [
-    'Пляж', 
-    'Отель', 
-    'Питание в отеле', 
-    'Развлечения'
+const hotelInfo = {
+    'name': 'PGS Kiris Resort',
+    'stars': 5,
+    'address': 'Kiriş, Sahil Cd. No 9, 07980 Kemer/Antalya, Турция'
+};
+
+const dataHotelFeatures = [
+    {
+        'title': 'Пляж',
+        'description': 'Наша гостиница имеет крутой пляж, где вы можете расслабиться',
+        'img': 'images/feature_image_beach.jpg'
+    },
+    {
+        'title': 'Отель',
+        'description': 'В этом разделе вы сможете узнать нашу гостиницу лучше',
+        'img': 'images/feature_image_hotel.jpg'
+    },
+    {
+        'title': 'Питание в отеле',
+        'description': 'Мы предоставляем трёхразовое питание за дополнительную плату',
+        'img': 'images/feature_image_meals.jpg'
+    },
+    {
+        'title': 'Развлечения',
+        'description': 'Теннисный корт, три бассейна, приставка и даже больше',
+        'img': 'images/feature_image_entertainments.jpg'
+    }
 ];
 
 function displayCardsHotelFeatures() {
-    const cardsHotelFeatures = document.querySelector('.hotel-features');
-    if (cardsHotelFeatures) {
-        const queryTitles = document.querySelectorAll('.hotel-features__title');
-        queryTitles.forEach((node, i) => {
-            node.textContent = listHotelFeaturesTitles[i];
-        });
-    }
+    let hotelFeaturesList = document.getElementById('hotelFeaturesList');
+
+    // Очистка предыдущего содержимого списка
+    hotelFeaturesList.innerHTML = '';
+
+    // Генерация элементов на основе данных
+    dataHotelFeatures.forEach(feature => {
+        const listItem = document.createElement('li');
+        listItem.className = 'hotel-features__item';
+
+        listItem.innerHTML = `
+            <img src="${feature.img}" alt="${feature.title}" class="hotel-features__image">
+            <h3 class="hotel-features__title">${feature.title}</h3>
+            <p class="hotel-features__description">${feature.description}</p>
+            <button class="hotel-features__button btn-more">Подробнее</button>
+        `;
+
+        hotelFeaturesList.appendChild(listItem);
+    });
 };
 
 /**
