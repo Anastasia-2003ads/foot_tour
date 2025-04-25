@@ -208,16 +208,15 @@
     display: flex;
     justify-content: center;
     padding: 56px 0;
+    overflow: hidden;
 }
 
 .hotel-features__list {
-    gap: 32px;
+    display: flex;
     max-width: 1244px;
     padding: 0;
     margin: 0;
     list-style-type: none;
-    grid-template-columns: repeat(4, 287px);
-    justify-content: center;
 }
 
 .hotel-features__item {
@@ -226,6 +225,8 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    max-width: 287px;  /* Ensure the max width fits your design */
+    flex: 0 0 auto;  /* Prevent items from stretching */
 }
 
 .hotel-features__image {
@@ -246,16 +247,8 @@
     margin-top: auto;
 }
 
-@media (max-width: 1260px) {
-    .hotel-features__list {
-        justify-content: center; /* Center items on smaller screens */
-    }
-}
-
-@media (max-width: 620px) {
-    .hotel-features__list {
-        grid-template-columns: 1fr;
-    }
+.swiper-pagination-bullet-active {
+    background: var(--button-color);
 }
 
 .similar-hotels {

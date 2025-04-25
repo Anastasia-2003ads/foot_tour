@@ -26,9 +26,24 @@
             "img": "images/feature_image_entertainments.jpg"
         },
         {
-            "title": "Пляж",
-            "description": "Наша гостиница имеет крутой пляж, где вы можете расслабиться",
+            "title": "Пляж #2",
+            "description": "Наша гостиница имеет крутой пляж #2, где вы можете расслабиться",
             "img": "images/feature_image_beach.jpg"
+        },
+        {
+            "title": "Отель #2",
+            "description": "В этом разделе вы сможете узнать нашу гостиницу #2 лучше",
+            "img": "images/feature_image_hotel.jpg"
+        },
+        {
+            "title": "Питание в отеле #2",
+            "description": "Мы предоставляем трёхразовое питание #2 за дополнительную плату",
+            "img": "images/feature_image_meals.jpg"
+        },
+        {
+            "title": "Развлечения #2",
+            "description": "Теннисный корт, три бассейна, приставка и даже больше #2",
+            "img": "images/feature_image_entertainments.jpg"
         }
     ]
 }
