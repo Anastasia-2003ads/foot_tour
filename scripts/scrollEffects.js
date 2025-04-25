@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+    console.log('Hello world!')
+});
+
 function centerItemInView(containerSelector, itemSelector) {
     const container = document.querySelector(containerSelector);
     const targetItem = document.querySelector(itemSelector);
